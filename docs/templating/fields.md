@@ -126,3 +126,34 @@ A key/value JSON array can also be used to define prices in different currencies
 | `image`           | string                     | URL for a product thumbnail to be used in the cart. The default cart template's image is 50px square.                                                                                                    |
 | `price`           | decimal or key/value array | Price override, or key/value array to define multiple currencies (`{ 'usd': 20, 'eur': 17.79 }`). Defaults to the price defined in the Product Details field.                                            |
 | `additionalProps` | key/value array            | Attribute+value pairs for the anchor. Useful for supplying additional [product definition](https://docs.snipcart.com/v2/configuration/product-definition) details.                                          |
+
+## Querying Elements by Product Details
+
+Snipcart 1.3.4 added the ability to query elements by information stored in the Product Details field.
+
+For example, you can grab `products` entries that have inventory:
+
+```twig
+{% set availableProducts = craft.entries()
+    .section('products')
+    .productDetails({ inventory: '> 0' })
+    .all() %}
+```
+
+Or get items that are not shippable:
+
+```twig
+{% set availableProducts = craft.entries()
+    .section('products')
+    .productDetails({ shippable: false })
+    .all() %}
+```
+
+Or all items more than $50 but less than $1,000:
+
+```twig
+{% set availableProducts = craft.entries()
+    .section('products')
+    .productDetails({ price: '> 50', price: '< 1000' })
+    .all() %}
+```
