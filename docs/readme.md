@@ -94,3 +94,15 @@ Snipcart's focus is on quick site integration, so a lot of complex store functio
 The Snipcart plugin is great for stores that don't require the full complexity of Commerce Pro, but would be too limited by Commerce Lite.
 
 ![Snipcart vs. Craft Commerce](../resources/commerce-comparison.png)
+
+### How’s this different from Commerce?
+
+If you’ve worked with [Craft Commerce](https://craftcms.com/commerce) before, there are some key differences to be aware of:
+
+1. **Snipcart is focused on the front end.**  
+Snipcart (the service) gets product details from buy buttons on the front end, so you’re free to model products in Craft however you’d like. There’s no purchasable or custom element type. The included Product Details field conveniently stores common product information in a field type.
+2. **Heavy lifting is handled by Snipcart’s SaaS.**  
+Your Craft project’s role is to deliver a front end and optionally use event hooks for customizing shipping options and order flow. A number of integrations and options are easily configured from [app.snipcart.com](https://app.snipcart.com/).
+3. **You don’t need to create checkout or email templates;** you can quickly start with Snipcart’s base templates and modify them as you’d like. (Email templates can be edited from Snipcart’s dashboard, and the cart can be modified with CSS and a JavaScript API.)
+4. **Snipcart users != Craft users.**  
+Snipcart customers can check out as guests or create an account, but the plugin doesn’t provide any automatic syncing of Snipcart accounts and Craft users. With Commerce, every customer is a Craft user and that could be important for your shop.
