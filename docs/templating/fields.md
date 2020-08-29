@@ -23,7 +23,7 @@ Simplest form.
 
 ```twig
 {# Buy Now #}
-{{ entry.productDetails.getBuyNowButton() | raw }}
+{{ entry.productDetails.getBuyNowButton() }}
 ```
 
 The default markup will look something like this without any [customization](/templating/fields.md#additional-options):
@@ -57,7 +57,7 @@ Optionally supply custom options that don't affect pricing.
         required: true,
         options: [ 'Small', 'Medium', 'Large' ]
     }]
-}) | raw }}
+}) }}
 ```
 
 :::tip
@@ -92,7 +92,7 @@ Custom options that each adjust the base product price. Each amount can be posit
             }
         ]
     }]
-}) | raw }}
+}) }}
 ```
 
 ## Buy Button + Price Override
@@ -102,7 +102,7 @@ If you have a specific need to override the item's price in your template, passi
 ```twig
 {{ entry.productDetails.getBuyNowButton({
     price: 100
-}) | raw }}
+}) }}
 ```
 
 A key/value JSON array can also be used to define prices in different currencies, provided that you've [configured your store](https://docs.snipcart.com/v2/configuration/multi-currency) to support multiple currencies.
@@ -110,7 +110,7 @@ A key/value JSON array can also be used to define prices in different currencies
 ```twig
 {{ entry.productDetails.getBuyNowButton({
     price: { 'usd': 20, 'cad': 26.84 }
-}) | raw }}
+}) }}
 ```
 
 ## All Options

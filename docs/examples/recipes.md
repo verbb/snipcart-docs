@@ -88,7 +88,7 @@ Let's say we're selling coffee and we'd like customers to be able to select the 
                 options: grinds
             }
         ]
-    }) | raw }}
+    }) }}
 </div>
 ```
 

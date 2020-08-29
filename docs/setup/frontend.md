@@ -40,7 +40,7 @@ The simplest version looks like this, and you'd add it to product detail pages o
 
 ```twig
 {# Buy Now #}
-{{ entry.productDetails.getBuyNowButton() | raw }}
+{{ entry.productDetails.getBuyNowButton() }}
 ```
 
 More on customizing these buttons [here](/templating/fields.md).

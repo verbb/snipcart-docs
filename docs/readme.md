@@ -30,7 +30,7 @@ Add the cart system to your frontend, a cart link with an item count, and [simpl
 {{ craft.snipcart.cartLink }}
 
 {# Buy Now #}
-{{ entry.productDetails.getBuyNowButton() | raw }}
+{{ entry.productDetails.getBuyNowButton() }}
 
 {# Buy Now button with custom options #}
 {{ entry.productDetails.getBuyNowButton({
@@ -41,7 +41,7 @@ Add the cart system to your frontend, a cart link with an item count, and [simpl
            options: [ 'Blue', 'Green', 'Red' ]
        }
    ]
-}) | raw }}
+}) }}
 
 ```
 
