@@ -28,11 +28,11 @@ public function init()
     Event::on(
         Shipments::class,
         Shipments::EVENT_BEFORE_RETURN_SHIPPING_RATES,
-        function(WebhookEvent $event) {
+        function(ShippingRateEvent $event) {
             $event->rates = $this->modifyShippingRates(
                 $event->rates,
                 $event->order,
-                $event->packaging
+                $event->package
             );
         }
     );
