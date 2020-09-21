@@ -64,6 +64,18 @@ Receives [OrderTrackingEvent](https://github.com/workingconcept/snipcart-craft-p
 
 Triggered when an order's tracking number has changed.
 
+## Order Refund Created
+
+`Webhooks::EVENT_ON_ORDER_REFUND_CREATED`
+
+Receives [OrderRefundEvent](https://github.com/workingconcept/snipcart-craft-plugin/blob/master/src/events/OrderRefundEvent.php) with a `refund` property.
+
+## Order Notification Created
+
+`Webhooks::EVENT_ON_ORDER_NOTIFICATION_CREATED`
+
+Receives [OrderNotificationEvent](https://github.com/workingconcept/snipcart-craft-plugin/blob/master/src/events/OrderNotificationEvent.php) with a `notification` property.
+
 ## Subscription Created
 
 `Webhooks::EVENT_ON_SUBSCRIPTION_CREATED`
