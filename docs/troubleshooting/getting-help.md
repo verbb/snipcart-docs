@@ -6,9 +6,9 @@ meta:
 
 # Getting Help
 
-- Email [support@workingconcept.com](mailto:support@workingconcept.com).
+- Email [support@fostercommerce.com](mailto:support@fostercommerce.com).
 - Post to the [Craft CMS Stack Exchange site](https://craftcms.stackexchange.com/) with a `plugin-snipcart` tag.
-- File a [GitHub Issue](https://github.com/workingconcept/snipcart-craft-plugin/issues) or [pull request](https://github.com/workingconcept/snipcart-craft-plugin/pulls).
-- Submit a support request [at workingconcept.com](https://workingconcept.com/plugins/snipcart/support).
-- Find [@mattrambles on Twitter](https://twitter.com/mattrambles) or @mattts (Matt Stein) [on Discord](https://craftcms.com/blog/discord).
+- File a [GitHub Issue](https://github.com/FosterCommerce/snipcart-craft-plugin/issues) or [pull request](https://github.com/FosterCommerce/snipcart-craft-plugin/pulls).
+- Submit a support request [from fostercommerce.com](https://www.fostercommerce.com/software).
+- Find [@fostercommerce on Twitter](https://twitter.com/fostercommerce).
 - Reach out to Snipcart from their control panel or [contact form](https://snipcart.com/contact-feedback).
