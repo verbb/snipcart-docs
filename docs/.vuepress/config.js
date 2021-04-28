@@ -7,7 +7,7 @@ module.exports = {
   },
   theme: "craftdocs",
   themeConfig: {
-    repo: "workingconcept/snipcart-docs",
+    repo: "FosterCommerce/snipcart-docs",
     docsBranch: "master",
     docsDir: "docs",
     editLinks: true,
@@ -132,8 +132,8 @@ module.exports = {
     ],
     nav: [
       {
-        text: "Working Concept",
-        link: "https://workingconcept.com/plugins/snipcart",
+        text: "Foster Commerce",
+        link: "https://www.fostercommerce.com/software",
       },
     ],
   },
