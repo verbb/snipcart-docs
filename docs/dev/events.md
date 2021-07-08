@@ -14,7 +14,7 @@ Once you've configured Snipcart to post to your webhook URL, each of the followi
 
 Receives [ShippingRateEvent](https://github.com/workingconcept/snipcart-craft-plugin/blob/master/src/events/ShippingRateEvent.php) with `order` and `package` properties.
 
-Triggered in response to a `shippingrates.fetch` webhook event, but _before_ shipping rates are requested from a shipping provider. This offers a chance to modify the order before shipping rates are requested.
+Triggered in response to a `shippingrates.fetch` webhook event, but _before_ shipping rates are requested from a shipping provider. This offers a chance to modify the order before shipping rates are requested, or do some validation and throw an error by setting the event's `isValid` property to `false` and optionally setting the `errors` property to an array of `['key' => 'error key', 'message' => 'error message']` associative arrays.
 
 ## Shipping Rate Response
 
@@ -22,7 +22,7 @@ Triggered in response to a `shippingrates.fetch` webhook event, but _before_ shi
 
 Receives [ShippingRateEvent](https://github.com/workingconcept/snipcart-craft-plugin/blob/master/src/events/ShippingRateEvent.php) with `order`, `package` and `rates` properties.
 
-Triggered before any custom shipping rates are returned to Snipcart so that they may be filtered or modified.
+Triggered before any custom shipping rates are returned to Snipcart so that they may be filtered or modified. You can also do validation and throw an error (for instance if no `rates` were returned) by setting the event's `isValid` property to `false` and optionally setting the `errors` property to an array of `['key' => 'error key', 'message' => 'error message']` associative arrays.
 
 ## Completed Order
 
